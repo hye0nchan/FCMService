@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\intergratedService_container.props" />
+</Project>

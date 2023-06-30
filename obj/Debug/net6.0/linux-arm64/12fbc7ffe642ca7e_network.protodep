@@ -1,0 +1,2 @@
+obj\Debug\net6.0\linux-arm64\Protos/Network.cs \
+obj\Debug\net6.0\linux-arm64\Protos/NetworkGrpc.cs: Protos/network.proto

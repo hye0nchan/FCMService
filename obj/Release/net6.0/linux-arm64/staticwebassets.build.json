@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "rSMV7r1lVrP6iPD+DkMTE0i3T9/uHjWLDxXosLCOzK4=",
+  "Source": "intergratedService",
+  "BasePath": "_content/intergratedService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

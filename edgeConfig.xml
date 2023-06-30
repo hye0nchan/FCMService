@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Edge>
+  <Name>Edge 1</Name>
+  <SerialNumber>2305193Fg7</SerialNumber>
+	
+   <FcmToken>chtCLcXpSLeGaScld1-h4f:APA91bFNjkDkR67WeqdF8r9HzZpsesHfHAr_4C5awhItjiHcr22ZjwOWeXD-eM
+  TOE7E0Ts967_9zAAAmF_3HbEKp_mah1PuTmgHXM_KLHohW0A6P8Y3ktxlFOLfCpCtCKMrXDDEamYc8</FcmToken>
+  <influxToken>PQebYVWrTYe4cqe0MetS90XLe80AQUxYqRKbNNtOrrFDg2UO2HPua5u8atv0JdaR_m38hSC0FPYiEFUBnOaviQ==</influxToken>
+  <influxAddress>saltware.mooo.com:6001</influxAddress>
+  <LocalInfluxToken>1VrctyQfRLq7g_JvBl6bEv_iaLFd3DUAvdqMIA04AHbUeILjPc01dPTQSIe00y2zdkbayy9z9rSXxofj1Tu0nQ==</LocalInfluxToken>
+  <nodeList>
+    <node>
+      <nodeSlave>3</nodeSlave>
+      <SensorList>
+        <Sensor>
+          <SensorID>1</SensorID>
+          <Address>2</Address>
+        </Sensor>
+        <Sensor>
+          <SensorID>2</SensorID>
+          <Address>8</Address>
+        </Sensor>
+        <Sensor>
+          <SensorID>16</SensorID>
+          <Address>53</Address>
+        </Sensor>
+        <Sensor>
+          <SensorID>17</SensorID>
+          <Address>41</Address>
+        </Sensor>
+        <Sensor>
+          <SensorID>3</SensorID>
+          <Address>56</Address>
+        </Sensor>
+        <Sensor>
+          <SensorID>4</SensorID>
+          <Address>47</Address>
+        </Sensor>
+      </SensorList>
+    </node>
+  </nodeList>
+</Edge>
+
+

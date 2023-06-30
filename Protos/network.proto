@@ -1,0 +1,46 @@
+// Copyright 2019 The gRPC Authors
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+syntax = "proto3";
+
+
+package net_exchange;
+
+
+service ExProto {
+	rpc SensorRtu (stream SensorMessage) returns (stream SensorMessage); 
+	rpc TControllerRtu (ControllerMessage) returns (ControllerResponse);
+}
+
+message ControllerMessage{	
+    optional bytes relay_unit_top = 1; // 구동기 위 12개
+	optional bytes relay_unit_bottom = 2; // 구동기 아래 12개
+	optional bytes switch_unit = 3; // 개폐기 12개
+}
+
+message ControllerResponse{ 
+	optional bytes response_relay_top_info = 1; // 구동기 상태 정보 (on/off)
+	optional bytes response_relay_bottom_info= 2; // 구동기 상태 정보 (on/off)
+	optional bytes response_switch_info =3; // 개폐기 상태 정보 (open/stop/close)
+}
+
+message SensorMessage{
+	optional bytes sensor_unit = 1; // 센서 데이터 요청 시 사용
+	optional bytes sensor_count = 2; // 센서 개수 요청 시 사용
+	map<string, string> response_data = 3;
+
+	optional bytes relay_top_info = 4; // 구동기 상태 정보 (on/off)
+	optional bytes relay_bottom_info= 5; // 구동기 상태 정보 (on/off)
+	optional bytes switch_info =6; // 개폐기 상태 정보 (open/stop/close)
+}
